@@ -42,11 +42,11 @@ Columns:
 - first_name (VARCHAR)
 - last_name (VARCHAR)
 - birthday (DATE)
-- date (DATE)
+- date_transaction (DATE)
 - id_transaction_type (INTEGER)
 - amount_transaction (FLOAT)
 - desc_transaction_type (VARCHAR)
-- sign (VARCHAR)
+- sign_transaction (VARCHAR)
 "
 
 ### PAGE 2 ###

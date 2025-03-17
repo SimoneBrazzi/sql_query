@@ -164,5 +164,10 @@ texts<- c("Age of customer", "Number of outgoing transactions on all accounts", 
 queries_lst <- setNames(queries, texts)
 dbGetQuery(con, query11)
 
+# TAGS
+link_shiny <- tags$a(shiny::icon("github"), "Shiny", href = "https://github.com/rstudio/shiny", target = "_blank")
+link_posit <- tags$a(shiny::icon("r-project"), "Posit", href = "https://posit.co", target = "_blank")
+link_github <- tags$a(shiny::icon("github"), "GitHub", href = "https://github.com/SimoneBrazzi/sql_query", target = "_blank")
+
 onStop(\() dbDisconnect(con))
 

@@ -85,10 +85,35 @@ ui <- navbarPage(
                gt_output("llm_table")
              ),
            ),
+  ),
+  nav_spacer(),
+  tabPanel("Citations", 
+           h3("References"),
+           tags$ul(
+             tags$li("Wickham, H., Cheng, J., & Jacobs, A. (2025). ellmer: Chat with Large Language Models. R package version 0.1.1. Retrieved from ", 
+                     tags$a(href = "https://ellmer.tidyverse.org", "https://ellmer.tidyverse.org", target = "_blank")),
+             tags$li(tags$a("Joe Cheng - Shiny x AI - YouTube", 
+                            href = "https://www.youtube.com/watch?v=AP8BWGhCRZc", target = "_blank")),
+             tags$li("Iannone, R., Cheng, J., Schloerke, B., Hughes, E., Lauer, A., Seo, J., Brevoort, K., & Roy, O. (2025). gt: Easily Create Presentation-Ready Display Tables. R package version 0.11.1.9000. Retrieved from ", 
+                     tags$a(href = "https://gt.rstudio.com", "https://gt.rstudio.com", target = "_blank")),
+             tags$li("Chang, W., Cheng, J., Allaire, J.J., Sievert, C., Schloerke, B., Xie, Y., Allen, J., McPherson, J., Dipert, A., & Borges, B. (2025). shiny: Web Application Framework for R. R package version 1.10.0.9000. Retrieved from ", 
+                     tags$a(href = "https://shiny.posit.co/", "https://shiny.posit.co/", target = "_blank")),
+             tags$li("Mühleisen, H., & Raasveldt, M. (2025). duckdb: DBI Package for the DuckDB Database Management System. R package version 1.2.1. Retrieved from ", 
+                     tags$a(href = "https://r.duckdb.org/", "https://r.duckdb.org/", target = "_blank"))
+           )
+  ),
+  
+  nav_menu(
+    title = "Links",
+    align = "right",
+    nav_item(link_shiny),
+    nav_item(link_posit),
+    nav_item(link_github)
   )
   
-  ### END ###
+  
 )
+  ### END ###
 
 
 # server function
